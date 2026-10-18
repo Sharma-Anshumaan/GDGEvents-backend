@@ -1,0 +1,61 @@
+{
+  "expo": {
+    "name": "GDG IIIT Kalyani",
+    "slug": "-gdg-events",
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "icon": "./assets/images/iconforapp.png",
+    "scheme": "gdgevents",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "icon": "./assets/expo.icon"
+    },
+    "android": {
+      "package": "com.iamanshumaan.gdgevents",
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/images/iconforapp.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "server",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#208AEF",
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 76
+        }
+      ],
+      "expo-secure-store",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {
+        "asyncRoutes": {
+          "web": true
+        }
+      },
+      "eas": {
+        "projectId": "12c64331-ad10-4e09-92f6-c95f03f760f1"
+      }
+    },
+    "owner": "iamanshumaans-team"
+  }
+}
